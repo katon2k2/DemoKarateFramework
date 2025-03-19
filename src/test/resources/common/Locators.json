@@ -1,0 +1,51 @@
+{
+  "loginPage": {
+    "Title": "//h1[contains(text(),'Đăng Nhập')]",
+    "InputUserAccount": "//input[@id='InputUserAccount']",
+    "InputUserPassword": "//input[@id='InputUserPassword']",
+    "ButtonLogin": "//button[@id='ButtonLogin']",
+    "ButtonRegister": "//button[@id='ButtonRegister']",
+    "NotiEmptyInput": "//label[contains(text(),'Vui lòng nhập đầy đủ thông đăng nhập')]",
+    "NotiWrongAccount": "//label[contains(text(),'Tên đăng nhập hoặc mật khẩu không chính xác!')]",
+    "NotiRegisterSuccess": "//label[contains(text(),'Đăng ký tài khoản thành công')]"
+  },
+  "registerPage": {
+    "Title": "//h1[contains(text(),'Đăng Ký')]",
+    "InputUserName": "//input[@id='InputUserName']",
+    "InputUserPhone": "//input[@id='InputUserPhone']",
+    "InputUserEmail": "//input[@id='InputUserEmail']",
+    "InputUserAccount": "//input[@id='InputUserAccount']",
+    "InputUserPassword": "//input[@id='InputUserPassword']",
+    "InputUserConfirmPassword": "//input[@id='InputUserConfirmPassword']",
+    "ButtonLogin": "//button[@id='ButtonLogin']",
+    "ButtonRegister": "//button[@id='ButtonRegister']",
+    "NotiInvalidUserName": "//label[contains(text(),'Họ tên không hợp lệ. Họ tên không được chứa chữ số')]",
+    "NotiInvalidUserPhone": "//label[contains(text(),'Số điện thoại không hợp lệ. Số điện thoại chỉ được')]",
+    "NotiInvalidUserEmail": "//label[contains(text(),'Địa chỉ email không hợp lệ. Địa chỉ email phải có ')]",
+    "NotiInvalidAccount": "//label[contains(text(),'Tên đăng nhập không hợp lệ. Tên đăng nhập phải bắt')]",
+    "NotiAccountExists": "//label[contains(text(),'Tên đăng nhập này đã tồn tại!')]",
+    "NotiInvalidPassword": "//label[contains(text(),'Mật khẩu không hợp lệ. Mật khẩu phải có tối thiểu ')]",
+    "NotiInvalidConfirmPassword": "//label[contains(text(),'Nhập lại mật khẩu không khớp.')]"
+  },
+  "showInfoPage": {
+    "Title": "//b[normalize-space()='DemoApp']",
+    "InputUserAccount": "//input[@id='InputUserAccount']",
+    "ButtonLogout": "//form[@id='FormLogout']//button[@type='submit']",
+    "ButtonUpdate": "//div[@class='ButtonUpdate']//button[@type='submit']",
+    "NotiUpdateSuccess": "//label[contains(text(),'Cập nhật thông tin thành công')]"
+  },
+  "updateInfoPage": {
+    "Title": "//b[normalize-space()='DemoApp']",
+    "InputUserName": "//input[@id='InputUserName']",
+    "InputUserPhone": "//input[@id='InputUserPhone']",
+    "InputUserEmail": "//input[@id='InputUserEmail']",
+    "ButtonLogout": "//form[@id='FormLogout']//button[@type='submit']",
+    "ButtonBack": "//div[@class='ButtonBack']//a",
+    "ButtonSave": "//button[@onclick='showConfirmUpdate()']",
+    "ButtonAgree": "//button[contains(text(),'Đồng ý')]",
+    "ButtonCancel": "//button[normalize-space()='Thoát']",
+    "NotiInvalidUserName": "//label[contains(text(),'Họ tên không hợp lệ. Họ tên không được chứa chữ số')]",
+    "NotiInvalidUserPhone": "//label[contains(text(),'Số điện thoại không hợp lệ. Số điện thoại chỉ được')]",
+    "NotiInvalidUserEmail": "//label[contains(text(),'Địa chỉ email không hợp lệ. Địa chỉ email phải có ')]"
+  }
+}
