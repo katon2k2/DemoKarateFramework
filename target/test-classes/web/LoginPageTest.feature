@@ -1,8 +1,8 @@
 Feature: kiểm thử trang đăng nhập
 
   Background:
-    * configure driver = { type: 'chromedriver', pollingInterval: 2000, headless: true }
-    * def data = read('classpath:common/Data.json')
+    * configure driver = { type: 'chromedriver', pollingInterval: 2000, addOptions: ['--start-maximized'] }
+    * def data = read('classpath:common/DataWeb.json')
     * def locators = read('classpath:common/Locators.json')
 
   Scenario: kiểm tra hiển thị trang đăng nhập

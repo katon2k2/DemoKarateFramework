@@ -1,9 +1,10 @@
 Feature: kiểm thử trang hiển thị thông tin
 
   Background:
-    * configure driver = { type: 'chromedriver', pollingInterval: 2000, headless: true }
-    * def data = read('classpath:common/Data.json')
+    * configure driver = { type: 'chromedriver', pollingInterval: 2000, addOptions: ['--start-maximized'] }
+    * def data = read('classpath:common/DataWeb.json')
     * def locators = read('classpath:common/Locators.json')
+
 
   Scenario: kiểm tra hiển thị trang hiển thị thông tin
     * call read('classpath:web/LoginPageTest.feature@LoginSuccess')

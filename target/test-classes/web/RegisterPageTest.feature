@@ -1,8 +1,8 @@
 Feature: kiểm thử trang đăng ký
 
   Background:
-    * configure driver = { type: 'chromedriver', pollingInterval: 2000, headless: true }
-    * def data = read('classpath:common/Data.json')
+    * configure driver = { type: 'chromedriver', pollingInterval: 2000, addOptions: ['--start-maximized']  }
+    * def data = read('classpath:common/DataWeb.json')
     * def locators = read('classpath:common/Locators.json')
 
   Scenario: kiểm tra hiển thị trang đăng ký
@@ -329,11 +329,15 @@ Feature: kiểm thử trang đăng ký
 
   @RegisterSuccess
   Scenario: kiểm tra đăng ký thành công
+    * def now = java.time.LocalDateTime.now()
+    * def formatter = java.time.format.DateTimeFormatter.ofPattern('yyyyMMddHHmmss')
+    * def timestamp = now.format(formatter)
+    * def account = 'A' + timestamp
     Given driver data.registerUrl
     And input(locators.registerPage.InputUserName, data.registerData.InputUserName)
     And input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)
     And input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)
-    And input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)
+    And input(locators.registerPage.InputUserAccount, account)
     And input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)
     And input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)
     And click(locators.registerPage.ButtonRegister)

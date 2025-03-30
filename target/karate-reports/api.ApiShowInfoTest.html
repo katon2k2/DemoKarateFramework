@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"b5052a10-79d4-4f5f-8025-a90f8a6b6679",karate_version:"1.4.0",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"380e756a-ed29-4e0c-a4e1-9b77c8208c28",karate_version:"1.4.0",karate_meta:null});
   }
 });
 </script>
@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-03-19 10:13:23 pm</div>
+    <div>2025-03-30 09:42:09 am</div>
   </div>
 </div>
 
@@ -81,7 +81,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>514</span>
+              <span>ms:</span>&nbsp;<span>423</span>
             </div>
           </div>
           <div class="step-row">
@@ -101,10 +101,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataApi.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -132,7 +132,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def loginResponse = call read(&#39;classpath:api/ApiLoginTest.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">283</div>
+    <div class="time-cell passed">243</div>
   </div>
 
    
@@ -151,7 +151,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">api.ApiLoginTest</div>
       </div>
-      <div class="time-cell passed">268</div>
+      <div class="time-cell passed">232</div>
     </div>
     <div>
       <div><div>
@@ -164,10 +164,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">4</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataApi.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -195,7 +195,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url data.apiUrl + &#39;/login&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -251,7 +251,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">262</div>
+    <div class="time-cell passed">227</div>
   </div>
 
    
@@ -260,7 +260,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.7.0.call.0.9">22:13:23.085 request:
+  <div class="preformatted" data-parent="0.7.0.call.0.9">09:42:09.089 request:
 1 &gt; POST http://127.0.0.1:8000/api/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 58
@@ -270,19 +270,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;InputUserAccount&quot;:&quot;AAAAAA&quot;,&quot;InputUserPassword&quot;:&quot;123456&quot;}
 
-22:13:23.350 response time in milliseconds: 265
+09:42:09.308 response time in milliseconds: 219
 1 &lt; 200
 1 &lt; Host: 127.0.0.1:8000
-1 &lt; Date: Wed, 19 Mar 2025 15:13:23 GMT
-1 &lt; Date: Wed, 19 Mar 2025 15:13:23 GMT
 1 &lt; Connection: close
-1 &lt; X-Powered-By: PHP/8.0.30
+1 &lt; X-Powered-By: PHP/8.2.12
 1 &lt; Cache-Control: no-cache, private
+1 &lt; Date: Sun, 30 Mar 2025 02:42:09 GMT
 1 &lt; Content-Type: application/json
 1 &lt; X-RateLimit-Limit: 60
-1 &lt; X-RateLimit-Remaining: 57
+1 &lt; X-RateLimit-Remaining: 46
 1 &lt; Access-Control-Allow-Origin: *
-{&quot;message&quot;:&quot;\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng!&quot;,&quot;token&quot;:&quot;y3K0KAMgSfQ5Z7LIoQ7hQh5nj4eoROTxnPTnE1tNSGXfZ2etVVdgh5gTvP71&quot;}
+{&quot;message&quot;:&quot;\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng!&quot;,&quot;token&quot;:&quot;x2cV7JRFR70vR1iJAWmRLgU7g6IY22ZHj7u1cg74QV26J8HHrZ5KB4hP35ZJ&quot;}
 
 </div>   
 
@@ -359,7 +358,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def token = response.token</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -448,7 +447,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">223</div>
+    <div class="time-cell passed">175</div>
   </div>
 
    
@@ -457,28 +456,27 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.10">22:13:23.350 request:
+  <div class="preformatted" data-parent="0.10">09:42:09.323 request:
 1 &gt; GET http://127.0.0.1:8000/api/user/show
-1 &gt; Authorization: y3K0KAMgSfQ5Z7LIoQ7hQh5nj4eoROTxnPTnE1tNSGXfZ2etVVdgh5gTvP71
+1 &gt; Authorization: x2cV7JRFR70vR1iJAWmRLgU7g6IY22ZHj7u1cg74QV26J8HHrZ5KB4hP35ZJ
 1 &gt; Host: 127.0.0.1:8000
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-22:13:23.569 response time in milliseconds: 219
+09:42:09.495 response time in milliseconds: 172
 1 &lt; 200
 1 &lt; Host: 127.0.0.1:8000
-1 &lt; Date: Wed, 19 Mar 2025 15:13:23 GMT
-1 &lt; Date: Wed, 19 Mar 2025 15:13:23 GMT
 1 &lt; Connection: close
-1 &lt; X-Powered-By: PHP/8.0.30
+1 &lt; X-Powered-By: PHP/8.2.12
 1 &lt; Cache-Control: no-cache, private
+1 &lt; Date: Sun, 30 Mar 2025 02:42:09 GMT
 1 &lt; Content-Type: application/json
 1 &lt; X-RateLimit-Limit: 60
-1 &lt; X-RateLimit-Remaining: 56
+1 &lt; X-RateLimit-Remaining: 45
 1 &lt; Access-Control-Allow-Origin: *
-{&quot;message&quot;:&quot;Th\u00f4ng tin t\u00e0i kho\u1ea3n&quot;,&quot;user&quot;:{&quot;id&quot;:31,&quot;name&quot;:&quot;Nguyen Van A&quot;,&quot;phone&quot;:&quot;0986889332&quot;,&quot;email&quot;:&quot;anv@gmail.com&quot;,&quot;account&quot;:&quot;AAAAAA&quot;}}
+{&quot;message&quot;:&quot;Th\u00f4ng tin t\u00e0i kho\u1ea3n&quot;,&quot;user&quot;:{&quot;id&quot;:18,&quot;name&quot;:&quot;Nguyen Van A&quot;,&quot;phone&quot;:&quot;0986889332&quot;,&quot;email&quot;:&quot;anv@gmail.com&quot;,&quot;account&quot;:&quot;AAAAAA&quot;}}
 
 </div>   
 
@@ -527,7 +525,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.message == &quot;Thông tin tài khoản&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    

@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"b5052a10-79d4-4f5f-8025-a90f8a6b6679",karate_version:"1.4.0",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"380e756a-ed29-4e0c-a4e1-9b77c8208c28",karate_version:"1.4.0",karate_meta:null});
   }
 });
 </script>
@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-03-19 10:19:59 pm</div>
+    <div>2025-03-30 09:43:21 am</div>
   </div>
 </div>
 
@@ -174,7 +174,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>8669</span>
+              <span>ms:</span>&nbsp;<span>1576</span>
             </div>
           </div>
           <div class="step-row">
@@ -194,7 +194,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -222,10 +222,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -241,6 +241,170 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
 </div>
           <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1533</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.Title)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">35</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:12]</span>
+                <span class="scenario-name">kiểm tra bỏ trống họ tên</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2075</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:12]bg"><div>
   
 
   
@@ -274,170 +438,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref passed">9</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">4739</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.Title)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3924</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[2:12]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[2:12]</span>
-                <span class="scenario-name">kiểm tra bỏ trống họ tên</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11619</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[2:12]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[2:12]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:12]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:12]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">6</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="0.13">
       <div class="step-ref passed">13</div>
       
@@ -445,7 +445,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8481</div>
+    <div class="time-cell passed">1304</div>
   </div>
 
    
@@ -454,7 +454,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.13">22:13:33.994 preferred port 9515 not available, will use: 60611
+  <div class="preformatted" data-parent="0.13">09:42:12.562 preferred port 9515 not available, will use: 60836
 </div>   
 
   
@@ -474,7 +474,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">104</div>
+    <div class="time-cell passed">103</div>
   </div>
 
    
@@ -502,7 +502,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">76</div>
+    <div class="time-cell passed">77</div>
   </div>
 
    
@@ -530,7 +530,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">63</div>
+    <div class="time-cell passed">56</div>
   </div>
 
    
@@ -558,7 +558,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">77</div>
+    <div class="time-cell passed">65</div>
   </div>
 
    
@@ -586,7 +586,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">63</div>
+    <div class="time-cell passed">50</div>
   </div>
 
    
@@ -614,7 +614,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">2734</div>
+    <div class="time-cell passed">399</div>
   </div>
 
    
@@ -642,7 +642,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell passed">12</div>
   </div>
 
    
@@ -671,7 +671,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12528</span>
+              <span>ms:</span>&nbsp;<span>2134</span>
             </div>
           </div>
           <div class="step-row">
@@ -691,7 +691,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -719,10 +719,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -778,7 +778,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8537</div>
+    <div class="time-cell passed">1328</div>
   </div>
 
    
@@ -787,7 +787,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.23">22:13:45.811 preferred port 9515 not available, will use: 60686
+  <div class="preformatted" data-parent="0.23">09:42:14.803 preferred port 9515 not available, will use: 60883
 </div>   
 
   
@@ -807,7 +807,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">88</div>
+    <div class="time-cell passed">100</div>
   </div>
 
    
@@ -835,7 +835,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">79</div>
+    <div class="time-cell passed">81</div>
   </div>
 
    
@@ -863,7 +863,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">61</div>
+    <div class="time-cell passed">73</div>
   </div>
 
    
@@ -891,7 +891,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">78</div>
+    <div class="time-cell passed">69</div>
   </div>
 
    
@@ -919,7 +919,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">59</div>
+    <div class="time-cell passed">50</div>
   </div>
 
    
@@ -947,7 +947,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3611</div>
+    <div class="time-cell passed">415</div>
   </div>
 
    
@@ -975,7 +975,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">11</div>
+    <div class="time-cell passed">13</div>
   </div>
 
    
@@ -1004,7 +1004,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11835</span>
+              <span>ms:</span>&nbsp;<span>1989</span>
             </div>
           </div>
           <div class="step-row">
@@ -1024,7 +1024,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1052,7 +1052,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -1111,7 +1111,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8619</div>
+    <div class="time-cell passed">1145</div>
   </div>
 
    
@@ -1120,7 +1120,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.33">22:13:58.531 preferred port 9515 not available, will use: 60752
+  <div class="preformatted" data-parent="0.33">09:42:17.100 preferred port 9515 not available, will use: 60933
 </div>   
 
   
@@ -1140,7 +1140,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">111</div>
+    <div class="time-cell passed">110</div>
   </div>
 
    
@@ -1168,7 +1168,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">82</div>
+    <div class="time-cell passed">95</div>
   </div>
 
    
@@ -1196,7 +1196,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">90</div>
+    <div class="time-cell passed">80</div>
   </div>
 
    
@@ -1224,7 +1224,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">81</div>
+    <div class="time-cell passed">66</div>
   </div>
 
    
@@ -1252,7 +1252,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">68</div>
+    <div class="time-cell passed">55</div>
   </div>
 
    
@@ -1280,7 +1280,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">2770</div>
+    <div class="time-cell passed">423</div>
   </div>
 
    
@@ -1337,7 +1337,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12906</span>
+              <span>ms:</span>&nbsp;<span>1947</span>
             </div>
           </div>
           <div class="step-row">
@@ -1357,7 +1357,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1385,10 +1385,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1416,7 +1416,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1444,7 +1444,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">9132</div>
+    <div class="time-cell passed">1177</div>
   </div>
 
    
@@ -1453,7 +1453,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.43">22:14:10.563 preferred port 9515 not available, will use: 60816
+  <div class="preformatted" data-parent="0.43">09:42:19.266 preferred port 9515 not available, will use: 60979
 </div>   
 
   
@@ -1473,7 +1473,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">84</div>
+    <div class="time-cell passed">93</div>
   </div>
 
    
@@ -1501,7 +1501,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">66</div>
+    <div class="time-cell passed">80</div>
   </div>
 
    
@@ -1529,7 +1529,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">57</div>
+    <div class="time-cell passed">71</div>
   </div>
 
    
@@ -1557,7 +1557,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">70</div>
+    <div class="time-cell passed">56</div>
   </div>
 
    
@@ -1585,7 +1585,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">66</div>
+    <div class="time-cell passed">52</div>
   </div>
 
    
@@ -1613,7 +1613,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3416</div>
+    <div class="time-cell passed">405</div>
   </div>
 
    
@@ -1641,7 +1641,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">11</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -1670,7 +1670,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12537</span>
+              <span>ms:</span>&nbsp;<span>2116</span>
             </div>
           </div>
           <div class="step-row">
@@ -1690,7 +1690,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1718,10 +1718,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1777,7 +1777,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">9118</div>
+    <div class="time-cell passed">1200</div>
   </div>
 
    
@@ -1786,7 +1786,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.53">22:14:23.682 preferred port 9515 not available, will use: 60881
+  <div class="preformatted" data-parent="0.53">09:42:21.373 preferred port 9515 not available, will use: 61025
 </div>   
 
   
@@ -1806,7 +1806,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">81</div>
+    <div class="time-cell passed">91</div>
   </div>
 
    
@@ -1834,7 +1834,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">65</div>
+    <div class="time-cell passed">78</div>
   </div>
 
    
@@ -1862,7 +1862,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell passed">75</div>
   </div>
 
    
@@ -1890,7 +1890,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">71</div>
+    <div class="time-cell passed">93</div>
   </div>
 
    
@@ -1918,7 +1918,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">72</div>
+    <div class="time-cell passed">61</div>
   </div>
 
    
@@ -1946,7 +1946,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3059</div>
+    <div class="time-cell passed">499</div>
   </div>
 
    
@@ -1974,7 +1974,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell passed">15</div>
   </div>
 
    
@@ -2003,7 +2003,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>13198</span>
+              <span>ms:</span>&nbsp;<span>2046</span>
             </div>
           </div>
           <div class="step-row">
@@ -2023,7 +2023,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2051,7 +2051,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -2110,7 +2110,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">9232</div>
+    <div class="time-cell passed">1224</div>
   </div>
 
    
@@ -2119,7 +2119,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.63">22:14:36.397 preferred port 9515 not available, will use: 60945
+  <div class="preformatted" data-parent="0.63">09:42:23.701 preferred port 9515 not available, will use: 61071
 </div>   
 
   
@@ -2139,7 +2139,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">78</div>
+    <div class="time-cell passed">89</div>
   </div>
 
    
@@ -2195,7 +2195,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">61</div>
+    <div class="time-cell passed">66</div>
   </div>
 
    
@@ -2223,7 +2223,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">70</div>
+    <div class="time-cell passed">61</div>
   </div>
 
    
@@ -2251,7 +2251,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">61</div>
+    <div class="time-cell passed">57</div>
   </div>
 
    
@@ -2279,7 +2279,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3613</div>
+    <div class="time-cell passed">466</div>
   </div>
 
    
@@ -2336,7 +2336,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12625</span>
+              <span>ms:</span>&nbsp;<span>2168</span>
             </div>
           </div>
           <div class="step-row">
@@ -2356,7 +2356,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2384,7 +2384,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -2443,7 +2443,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">9004</div>
+    <div class="time-cell passed">1257</div>
   </div>
 
    
@@ -2452,7 +2452,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.73">22:14:49.804 preferred port 9515 not available, will use: 61011
+  <div class="preformatted" data-parent="0.73">09:42:25.916 preferred port 9515 not available, will use: 61118
 </div>   
 
   
@@ -2472,7 +2472,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.invalidData.InputUserNameOverLength)</span>
       </div>
     </div>
-    <div class="time-cell passed">118</div>
+    <div class="time-cell passed">138</div>
   </div>
 
    
@@ -2500,7 +2500,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">59</div>
+    <div class="time-cell passed">63</div>
   </div>
 
    
@@ -2528,7 +2528,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">57</div>
+    <div class="time-cell passed">75</div>
   </div>
 
    
@@ -2556,7 +2556,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">65</div>
+    <div class="time-cell passed">59</div>
   </div>
 
    
@@ -2584,7 +2584,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">65</div>
+    <div class="time-cell passed">52</div>
   </div>
 
    
@@ -2612,7 +2612,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">60</div>
   </div>
 
    
@@ -2640,7 +2640,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3192</div>
+    <div class="time-cell passed">453</div>
   </div>
 
    
@@ -2668,7 +2668,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">9</div>
   </div>
 
    
@@ -2697,7 +2697,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11594</span>
+              <span>ms:</span>&nbsp;<span>2144</span>
             </div>
           </div>
           <div class="step-row">
@@ -2717,7 +2717,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2745,7 +2745,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -2804,7 +2804,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8429</div>
+    <div class="time-cell passed">1194</div>
   </div>
 
    
@@ -2813,7 +2813,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.84">22:15:02.607 preferred port 9515 not available, will use: 61078
+  <div class="preformatted" data-parent="0.84">09:42:28.252 preferred port 9515 not available, will use: 61167
 </div>   
 
   
@@ -2833,7 +2833,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.invalidData.InputUserNameWithNumber)</span>
       </div>
     </div>
-    <div class="time-cell passed">85</div>
+    <div class="time-cell passed">99</div>
   </div>
 
    
@@ -2861,7 +2861,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">78</div>
+    <div class="time-cell passed">70</div>
   </div>
 
    
@@ -2889,7 +2889,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">70</div>
+    <div class="time-cell passed">74</div>
   </div>
 
    
@@ -2917,7 +2917,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">85</div>
+    <div class="time-cell passed">70</div>
   </div>
 
    
@@ -2945,7 +2945,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">71</div>
+    <div class="time-cell passed">61</div>
   </div>
 
    
@@ -2973,7 +2973,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">70</div>
+    <div class="time-cell passed">74</div>
   </div>
 
    
@@ -3001,7 +3001,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">2692</div>
+    <div class="time-cell passed">484</div>
   </div>
 
    
@@ -3029,7 +3029,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">14</div>
   </div>
 
    
@@ -3058,7 +3058,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12557</span>
+              <span>ms:</span>&nbsp;<span>2249</span>
             </div>
           </div>
           <div class="step-row">
@@ -3078,7 +3078,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -3106,10 +3106,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3137,7 +3137,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3165,7 +3165,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8491</div>
+    <div class="time-cell passed">1357</div>
   </div>
 
    
@@ -3174,7 +3174,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.95">22:15:14.429 preferred port 9515 not available, will use: 61144
+  <div class="preformatted" data-parent="0.95">09:42:30.565 preferred port 9515 not available, will use: 61215
 </div>   
 
   
@@ -3194,7 +3194,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.invalidData.InputUserNameWithSpecialCharacters)</span>
       </div>
     </div>
-    <div class="time-cell passed">91</div>
+    <div class="time-cell passed">102</div>
   </div>
 
    
@@ -3222,7 +3222,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">69</div>
+    <div class="time-cell passed">77</div>
   </div>
 
    
@@ -3250,7 +3250,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">76</div>
+    <div class="time-cell passed">71</div>
   </div>
 
    
@@ -3278,7 +3278,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">85</div>
+    <div class="time-cell passed">60</div>
   </div>
 
    
@@ -3306,7 +3306,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">62</div>
+    <div class="time-cell passed">64</div>
   </div>
 
    
@@ -3334,7 +3334,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell passed">78</div>
   </div>
 
    
@@ -3362,7 +3362,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3613</div>
+    <div class="time-cell passed">429</div>
   </div>
 
    
@@ -3390,7 +3390,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -3419,7 +3419,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11626</span>
+              <span>ms:</span>&nbsp;<span>2126</span>
             </div>
           </div>
           <div class="step-row">
@@ -3439,7 +3439,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -3467,7 +3467,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -3526,7 +3526,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8482</div>
+    <div class="time-cell passed">1279</div>
   </div>
 
    
@@ -3535,7 +3535,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.106">22:15:27.164 preferred port 9515 not available, will use: 61213
+  <div class="preformatted" data-parent="0.106">09:42:32.989 preferred port 9515 not available, will use: 61265
 </div>   
 
   
@@ -3555,7 +3555,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.invalidData.InputUserNameOnlySpace)</span>
       </div>
     </div>
-    <div class="time-cell passed">72</div>
+    <div class="time-cell passed">95</div>
   </div>
 
    
@@ -3583,7 +3583,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">62</div>
+    <div class="time-cell passed">83</div>
   </div>
 
    
@@ -3611,7 +3611,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">56</div>
+    <div class="time-cell passed">86</div>
   </div>
 
    
@@ -3639,7 +3639,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">54</div>
+    <div class="time-cell passed">62</div>
   </div>
 
    
@@ -3695,7 +3695,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">48</div>
   </div>
 
    
@@ -3723,7 +3723,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">2771</div>
+    <div class="time-cell passed">401</div>
   </div>
 
    
@@ -3751,7 +3751,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">12</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -3780,7 +3780,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12808</span>
+              <span>ms:</span>&nbsp;<span>1992</span>
             </div>
           </div>
           <div class="step-row">
@@ -3800,7 +3800,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -3828,7 +3828,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -3859,7 +3859,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3887,7 +3887,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8572</div>
+    <div class="time-cell passed">1173</div>
   </div>
 
    
@@ -3896,7 +3896,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.117">22:15:39.021 preferred port 9515 not available, will use: 61279
+  <div class="preformatted" data-parent="0.117">09:42:35.248 preferred port 9515 not available, will use: 61315
 </div>   
 
   
@@ -3916,7 +3916,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">79</div>
+    <div class="time-cell passed">86</div>
   </div>
 
    
@@ -3944,7 +3944,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.invalidData.InputUserPhoneOverLength)</span>
       </div>
     </div>
-    <div class="time-cell passed">66</div>
+    <div class="time-cell passed">75</div>
   </div>
 
    
@@ -3972,7 +3972,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">68</div>
   </div>
 
    
@@ -4000,7 +4000,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">57</div>
+    <div class="time-cell passed">61</div>
   </div>
 
    
@@ -4028,7 +4028,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">52</div>
+    <div class="time-cell passed">56</div>
   </div>
 
    
@@ -4056,7 +4056,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">54</div>
+    <div class="time-cell passed">50</div>
   </div>
 
    
@@ -4084,7 +4084,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3861</div>
+    <div class="time-cell passed">408</div>
   </div>
 
    
@@ -4112,7 +4112,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -4141,7 +4141,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12653</span>
+              <span>ms:</span>&nbsp;<span>2186</span>
             </div>
           </div>
           <div class="step-row">
@@ -4161,7 +4161,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -4189,10 +4189,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -4220,7 +4220,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -4248,7 +4248,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8586</div>
+    <div class="time-cell passed">1209</div>
   </div>
 
    
@@ -4257,7 +4257,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.128">22:15:52.035 preferred port 9515 not available, will use: 61344
+  <div class="preformatted" data-parent="0.128">09:42:37.385 preferred port 9515 not available, will use: 61361
 </div>   
 
   
@@ -4277,7 +4277,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">80</div>
+    <div class="time-cell passed">90</div>
   </div>
 
    
@@ -4305,7 +4305,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.invalidData.InputUserPhoneTooShort)</span>
       </div>
     </div>
-    <div class="time-cell passed">67</div>
+    <div class="time-cell passed">78</div>
   </div>
 
    
@@ -4333,7 +4333,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">60</div>
+    <div class="time-cell passed">77</div>
   </div>
 
    
@@ -4361,7 +4361,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell passed">84</div>
   </div>
 
    
@@ -4389,7 +4389,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">61</div>
   </div>
 
    
@@ -4445,7 +4445,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3674</div>
+    <div class="time-cell passed">514</div>
   </div>
 
    
@@ -4473,7 +4473,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -4502,7 +4502,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12589</span>
+              <span>ms:</span>&nbsp;<span>2023</span>
             </div>
           </div>
           <div class="step-row">
@@ -4522,7 +4522,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -4550,10 +4550,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -4609,7 +4609,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8400</div>
+    <div class="time-cell passed">1219</div>
   </div>
 
    
@@ -4618,7 +4618,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.139">22:16:04.861 preferred port 9515 not available, will use: 61410
+  <div class="preformatted" data-parent="0.139">09:42:39.749 preferred port 9515 not available, will use: 61410
 </div>   
 
   
@@ -4638,7 +4638,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">77</div>
+    <div class="time-cell passed">89</div>
   </div>
 
    
@@ -4666,7 +4666,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.invalidData.InputUserPhoneWithAlphabet)</span>
       </div>
     </div>
-    <div class="time-cell passed">64</div>
+    <div class="time-cell passed">69</div>
   </div>
 
    
@@ -4694,7 +4694,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">59</div>
   </div>
 
    
@@ -4750,7 +4750,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">62</div>
+    <div class="time-cell passed">53</div>
   </div>
 
    
@@ -4778,7 +4778,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">46</div>
+    <div class="time-cell passed">52</div>
   </div>
 
    
@@ -4806,7 +4806,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3821</div>
+    <div class="time-cell passed">414</div>
   </div>
 
    
@@ -4834,7 +4834,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -4863,7 +4863,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11635</span>
+              <span>ms:</span>&nbsp;<span>1957</span>
             </div>
           </div>
           <div class="step-row">
@@ -4883,7 +4883,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -4911,7 +4911,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -4970,7 +4970,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8496</div>
+    <div class="time-cell passed">1175</div>
   </div>
 
    
@@ -4979,7 +4979,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.150">22:16:17.626 preferred port 9515 not available, will use: 61475
+  <div class="preformatted" data-parent="0.150">09:42:41.947 preferred port 9515 not available, will use: 61459
 </div>   
 
   
@@ -4999,7 +4999,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">77</div>
+    <div class="time-cell passed">92</div>
   </div>
 
    
@@ -5027,7 +5027,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.invalidData.InputUserPhoneWithSpecialCharacters)</span>
       </div>
     </div>
-    <div class="time-cell passed">61</div>
+    <div class="time-cell passed">67</div>
   </div>
 
    
@@ -5055,7 +5055,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">57</div>
+    <div class="time-cell passed">58</div>
   </div>
 
    
@@ -5083,7 +5083,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">57</div>
+    <div class="time-cell passed">63</div>
   </div>
 
    
@@ -5111,7 +5111,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">64</div>
+    <div class="time-cell passed">51</div>
   </div>
 
    
@@ -5139,7 +5139,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">46</div>
   </div>
 
    
@@ -5167,7 +5167,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">2761</div>
+    <div class="time-cell passed">394</div>
   </div>
 
    
@@ -5195,7 +5195,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -5224,7 +5224,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>13298</span>
+              <span>ms:</span>&nbsp;<span>2078</span>
             </div>
           </div>
           <div class="step-row">
@@ -5244,7 +5244,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -5272,7 +5272,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -5303,7 +5303,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -5331,7 +5331,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">9289</div>
+    <div class="time-cell passed">1237</div>
   </div>
 
    
@@ -5340,7 +5340,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.161">22:16:29.433 preferred port 9515 not available, will use: 61543
+  <div class="preformatted" data-parent="0.161">09:42:44.075 preferred port 9515 not available, will use: 61508
 </div>   
 
   
@@ -5360,7 +5360,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">86</div>
+    <div class="time-cell passed">98</div>
   </div>
 
    
@@ -5388,7 +5388,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.invalidData.InputUserPhoneOnlySpace)</span>
       </div>
     </div>
-    <div class="time-cell passed">70</div>
+    <div class="time-cell passed">67</div>
   </div>
 
    
@@ -5416,7 +5416,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell passed">73</div>
   </div>
 
    
@@ -5444,7 +5444,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">56</div>
+    <div class="time-cell passed">60</div>
   </div>
 
    
@@ -5472,7 +5472,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">54</div>
+    <div class="time-cell passed">49</div>
   </div>
 
    
@@ -5500,7 +5500,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">48</div>
+    <div class="time-cell passed">49</div>
   </div>
 
    
@@ -5528,7 +5528,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3628</div>
+    <div class="time-cell passed">434</div>
   </div>
 
    
@@ -5556,7 +5556,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -5585,7 +5585,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11638</span>
+              <span>ms:</span>&nbsp;<span>2241</span>
             </div>
           </div>
           <div class="step-row">
@@ -5605,7 +5605,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -5633,7 +5633,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -5664,7 +5664,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -5692,7 +5692,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8353</div>
+    <div class="time-cell passed">1204</div>
   </div>
 
    
@@ -5701,7 +5701,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.172">22:16:42.906 preferred port 9515 not available, will use: 61609
+  <div class="preformatted" data-parent="0.172">09:42:46.312 preferred port 9515 not available, will use: 61557
 </div>   
 
   
@@ -5721,7 +5721,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">85</div>
+    <div class="time-cell passed">87</div>
   </div>
 
    
@@ -5749,7 +5749,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">65</div>
+    <div class="time-cell passed">64</div>
   </div>
 
    
@@ -5777,7 +5777,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.invalidData.InputUserEmailOverLength)</span>
       </div>
     </div>
-    <div class="time-cell passed">270</div>
+    <div class="time-cell passed">316</div>
   </div>
 
    
@@ -5805,7 +5805,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">57</div>
+    <div class="time-cell passed">52</div>
   </div>
 
    
@@ -5833,7 +5833,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">49</div>
+    <div class="time-cell passed">52</div>
   </div>
 
    
@@ -5861,7 +5861,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">44</div>
+    <div class="time-cell passed">49</div>
   </div>
 
    
@@ -5889,7 +5889,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">2705</div>
+    <div class="time-cell passed">405</div>
   </div>
 
    
@@ -5917,7 +5917,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">9</div>
   </div>
 
    
@@ -5946,7 +5946,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12520</span>
+              <span>ms:</span>&nbsp;<span>1977</span>
             </div>
           </div>
           <div class="step-row">
@@ -5966,7 +5966,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -5994,10 +5994,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -6053,7 +6053,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8782</div>
+    <div class="time-cell passed">1194</div>
   </div>
 
    
@@ -6062,7 +6062,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.183">22:16:54.733 preferred port 9515 not available, will use: 61675
+  <div class="preformatted" data-parent="0.183">09:42:48.702 preferred port 9515 not available, will use: 61606
 </div>   
 
   
@@ -6082,7 +6082,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">86</div>
+    <div class="time-cell passed">92</div>
   </div>
 
    
@@ -6110,7 +6110,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell passed">65</div>
   </div>
 
    
@@ -6138,7 +6138,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.invalidData.InputUserEmailWithSpecialCharacters)</span>
       </div>
     </div>
-    <div class="time-cell passed">57</div>
+    <div class="time-cell passed">60</div>
   </div>
 
    
@@ -6166,7 +6166,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">51</div>
+    <div class="time-cell passed">64</div>
   </div>
 
    
@@ -6194,7 +6194,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell passed">51</div>
   </div>
 
    
@@ -6222,7 +6222,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">47</div>
+    <div class="time-cell passed">46</div>
   </div>
 
    
@@ -6250,7 +6250,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3362</div>
+    <div class="time-cell passed">395</div>
   </div>
 
    
@@ -6278,7 +6278,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">15</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -6307,7 +6307,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11501</span>
+              <span>ms:</span>&nbsp;<span>1994</span>
             </div>
           </div>
           <div class="step-row">
@@ -6327,7 +6327,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -6355,7 +6355,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -6386,7 +6386,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -6414,7 +6414,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8442</div>
+    <div class="time-cell passed">1183</div>
   </div>
 
    
@@ -6423,7 +6423,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.194">22:17:07.431 preferred port 9515 not available, will use: 61742
+  <div class="preformatted" data-parent="0.194">09:42:50.842 preferred port 9515 not available, will use: 61654
 </div>   
 
   
@@ -6443,7 +6443,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">76</div>
+    <div class="time-cell passed">96</div>
   </div>
 
    
@@ -6471,7 +6471,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">60</div>
+    <div class="time-cell passed">75</div>
   </div>
 
    
@@ -6499,7 +6499,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.invalidData.InputUserEmailIncorrectExtension)</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">77</div>
   </div>
 
    
@@ -6527,7 +6527,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">49</div>
+    <div class="time-cell passed">61</div>
   </div>
 
    
@@ -6555,7 +6555,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">56</div>
+    <div class="time-cell passed">58</div>
   </div>
 
    
@@ -6583,7 +6583,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">52</div>
+    <div class="time-cell passed">49</div>
   </div>
 
    
@@ -6611,7 +6611,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">2704</div>
+    <div class="time-cell passed">384</div>
   </div>
 
    
@@ -6639,7 +6639,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -6668,7 +6668,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12970</span>
+              <span>ms:</span>&nbsp;<span>2178</span>
             </div>
           </div>
           <div class="step-row">
@@ -6688,7 +6688,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -6716,7 +6716,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -6775,7 +6775,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8594</div>
+    <div class="time-cell passed">1188</div>
   </div>
 
    
@@ -6784,7 +6784,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.205">22:17:19.108 preferred port 9515 not available, will use: 61807
+  <div class="preformatted" data-parent="0.205">09:42:53.004 preferred port 9515 not available, will use: 61703
 </div>   
 
   
@@ -6804,7 +6804,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">76</div>
+    <div class="time-cell passed">178</div>
   </div>
 
    
@@ -6832,7 +6832,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">63</div>
+    <div class="time-cell passed">106</div>
   </div>
 
    
@@ -6860,7 +6860,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.invalidData.InputUserEmailHeaderIsSpace)</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell passed">70</div>
   </div>
 
    
@@ -6888,7 +6888,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">51</div>
+    <div class="time-cell passed">48</div>
   </div>
 
    
@@ -6916,7 +6916,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">56</div>
+    <div class="time-cell passed">51</div>
   </div>
 
    
@@ -6944,7 +6944,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">50</div>
+    <div class="time-cell passed">49</div>
   </div>
 
    
@@ -6972,7 +6972,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">4012</div>
+    <div class="time-cell passed">479</div>
   </div>
 
    
@@ -7000,7 +7000,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -7029,7 +7029,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12642</span>
+              <span>ms:</span>&nbsp;<span>2040</span>
             </div>
           </div>
           <div class="step-row">
@@ -7049,7 +7049,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -7077,7 +7077,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -7108,7 +7108,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -7136,7 +7136,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">4539</div>
+    <div class="time-cell passed">1219</div>
   </div>
 
    
@@ -7145,7 +7145,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.216">22:17:32.251 preferred port 9515 not available, will use: 61872
+  <div class="preformatted" data-parent="0.216">09:42:55.338 preferred port 9515 not available, will use: 61752
 </div>   
 
   
@@ -7165,7 +7165,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">4486</div>
+    <div class="time-cell passed">85</div>
   </div>
 
    
@@ -7193,7 +7193,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">66</div>
+    <div class="time-cell passed">70</div>
   </div>
 
    
@@ -7221,7 +7221,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">64</div>
   </div>
 
    
@@ -7249,7 +7249,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.invalidData.InputUserAccountExists)</span>
       </div>
     </div>
-    <div class="time-cell passed">50</div>
+    <div class="time-cell passed">64</div>
   </div>
 
    
@@ -7277,7 +7277,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">59</div>
   </div>
 
    
@@ -7305,7 +7305,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">50</div>
+    <div class="time-cell passed">48</div>
   </div>
 
    
@@ -7333,7 +7333,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3330</div>
+    <div class="time-cell passed">412</div>
   </div>
 
    
@@ -7361,7 +7361,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiAccountExists)</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">16</div>
   </div>
 
    
@@ -7390,7 +7390,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12604</span>
+              <span>ms:</span>&nbsp;<span>2006</span>
             </div>
           </div>
           <div class="step-row">
@@ -7410,7 +7410,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -7438,7 +7438,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -7469,7 +7469,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -7497,7 +7497,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8619</div>
+    <div class="time-cell passed">1155</div>
   </div>
 
    
@@ -7506,7 +7506,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.227">22:17:45.086 preferred port 9515 not available, will use: 61938
+  <div class="preformatted" data-parent="0.227">09:42:57.542 preferred port 9515 not available, will use: 61801
 </div>   
 
   
@@ -7526,7 +7526,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">78</div>
+    <div class="time-cell passed">86</div>
   </div>
 
    
@@ -7554,7 +7554,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">60</div>
+    <div class="time-cell passed">79</div>
   </div>
 
    
@@ -7582,7 +7582,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">69</div>
   </div>
 
    
@@ -7610,7 +7610,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.invalidData.InputUserAccountOverLength)</span>
       </div>
     </div>
-    <div class="time-cell passed">81</div>
+    <div class="time-cell passed">104</div>
   </div>
 
    
@@ -7638,7 +7638,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">64</div>
+    <div class="time-cell passed">49</div>
   </div>
 
    
@@ -7694,7 +7694,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3589</div>
+    <div class="time-cell passed">407</div>
   </div>
 
    
@@ -7722,7 +7722,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -7751,7 +7751,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11597</span>
+              <span>ms:</span>&nbsp;<span>2025</span>
             </div>
           </div>
           <div class="step-row">
@@ -7771,7 +7771,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -7799,7 +7799,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -7858,7 +7858,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8452</div>
+    <div class="time-cell passed">1233</div>
   </div>
 
    
@@ -7867,7 +7867,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.238">22:17:57.864 preferred port 9515 not available, will use: 62005
+  <div class="preformatted" data-parent="0.238">09:42:59.675 preferred port 9515 not available, will use: 61849
 </div>   
 
   
@@ -7887,7 +7887,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">82</div>
+    <div class="time-cell passed">100</div>
   </div>
 
    
@@ -7915,7 +7915,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">65</div>
+    <div class="time-cell passed">70</div>
   </div>
 
    
@@ -7943,7 +7943,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">63</div>
+    <div class="time-cell passed">67</div>
   </div>
 
    
@@ -7971,7 +7971,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.invalidData.InputUserAccountTooShort)</span>
       </div>
     </div>
-    <div class="time-cell passed">74</div>
+    <div class="time-cell passed">55</div>
   </div>
 
    
@@ -7999,7 +7999,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">61</div>
+    <div class="time-cell passed">50</div>
   </div>
 
    
@@ -8027,7 +8027,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">50</div>
+    <div class="time-cell passed">44</div>
   </div>
 
    
@@ -8055,7 +8055,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">2742</div>
+    <div class="time-cell passed">397</div>
   </div>
 
    
@@ -8083,7 +8083,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -8112,7 +8112,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11666</span>
+              <span>ms:</span>&nbsp;<span>2172</span>
             </div>
           </div>
           <div class="step-row">
@@ -8132,7 +8132,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -8160,7 +8160,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -8219,7 +8219,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8558</div>
+    <div class="time-cell passed">1234</div>
   </div>
 
    
@@ -8228,7 +8228,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.249">22:18:09.636 preferred port 9515 not available, will use: 62070
+  <div class="preformatted" data-parent="0.249">09:43:01.876 preferred port 9515 not available, will use: 61898
 </div>   
 
   
@@ -8248,7 +8248,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">78</div>
+    <div class="time-cell passed">94</div>
   </div>
 
    
@@ -8276,7 +8276,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">65</div>
+    <div class="time-cell passed">76</div>
   </div>
 
    
@@ -8304,7 +8304,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">69</div>
+    <div class="time-cell passed">77</div>
   </div>
 
    
@@ -8332,7 +8332,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.invalidData.InputUserAccountStartWithNumber)</span>
       </div>
     </div>
-    <div class="time-cell passed">63</div>
+    <div class="time-cell passed">70</div>
   </div>
 
    
@@ -8360,7 +8360,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">57</div>
   </div>
 
    
@@ -8388,7 +8388,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">45</div>
+    <div class="time-cell passed">59</div>
   </div>
 
    
@@ -8416,7 +8416,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">2725</div>
+    <div class="time-cell passed">495</div>
   </div>
 
    
@@ -8444,7 +8444,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -8473,7 +8473,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12647</span>
+              <span>ms:</span>&nbsp;<span>2153</span>
             </div>
           </div>
           <div class="step-row">
@@ -8493,7 +8493,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -8521,10 +8521,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -8580,7 +8580,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8448</div>
+    <div class="time-cell passed">1306</div>
   </div>
 
    
@@ -8589,7 +8589,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.260">22:18:21.475 preferred port 9515 not available, will use: 62137
+  <div class="preformatted" data-parent="0.260">09:43:04.244 preferred port 9515 not available, will use: 61948
 </div>   
 
   
@@ -8609,7 +8609,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">81</div>
+    <div class="time-cell passed">90</div>
   </div>
 
    
@@ -8637,7 +8637,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">63</div>
+    <div class="time-cell passed">69</div>
   </div>
 
    
@@ -8665,7 +8665,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">64</div>
   </div>
 
    
@@ -8693,7 +8693,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.invalidData.InputUserAccountWithSpecialCharacters)</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">60</div>
   </div>
 
    
@@ -8721,7 +8721,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">59</div>
+    <div class="time-cell passed">66</div>
   </div>
 
    
@@ -8749,7 +8749,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">54</div>
   </div>
 
    
@@ -8777,7 +8777,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3824</div>
+    <div class="time-cell passed">426</div>
   </div>
 
    
@@ -8805,7 +8805,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">14</div>
   </div>
 
    
@@ -8834,7 +8834,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12885</span>
+              <span>ms:</span>&nbsp;<span>2051</span>
             </div>
           </div>
           <div class="step-row">
@@ -8854,7 +8854,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -8882,7 +8882,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -8913,7 +8913,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -8941,7 +8941,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8546</div>
+    <div class="time-cell passed">1231</div>
   </div>
 
    
@@ -8950,7 +8950,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.271">22:18:34.294 preferred port 9515 not available, will use: 62204
+  <div class="preformatted" data-parent="0.271">09:43:06.593 preferred port 9515 not available, will use: 61998
 </div>   
 
   
@@ -8970,7 +8970,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">79</div>
+    <div class="time-cell passed">99</div>
   </div>
 
    
@@ -8998,7 +8998,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">68</div>
+    <div class="time-cell passed">71</div>
   </div>
 
    
@@ -9026,7 +9026,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">64</div>
+    <div class="time-cell passed">71</div>
   </div>
 
    
@@ -9054,7 +9054,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.invalidData.InputUserAccountOnlySpace)</span>
       </div>
     </div>
-    <div class="time-cell passed">60</div>
+    <div class="time-cell passed">59</div>
   </div>
 
    
@@ -9082,7 +9082,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">67</div>
+    <div class="time-cell passed">53</div>
   </div>
 
    
@@ -9110,7 +9110,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">56</div>
+    <div class="time-cell passed">50</div>
   </div>
 
    
@@ -9138,7 +9138,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3937</div>
+    <div class="time-cell passed">406</div>
   </div>
 
    
@@ -9195,7 +9195,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12814</span>
+              <span>ms:</span>&nbsp;<span>2269</span>
             </div>
           </div>
           <div class="step-row">
@@ -9215,7 +9215,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -9243,7 +9243,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -9274,7 +9274,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -9302,7 +9302,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8384</div>
+    <div class="time-cell passed">1358</div>
   </div>
 
    
@@ -9311,7 +9311,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.282">22:18:47.367 preferred port 9515 not available, will use: 62270
+  <div class="preformatted" data-parent="0.282">09:43:08.807 preferred port 9515 not available, will use: 62046
 </div>   
 
   
@@ -9331,7 +9331,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">75</div>
+    <div class="time-cell passed">91</div>
   </div>
 
    
@@ -9359,7 +9359,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">61</div>
+    <div class="time-cell passed">68</div>
   </div>
 
    
@@ -9387,7 +9387,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">75</div>
   </div>
 
    
@@ -9415,7 +9415,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">49</div>
+    <div class="time-cell passed">62</div>
   </div>
 
    
@@ -9443,7 +9443,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.invalidData.InputUserPasswordOverLength)</span>
       </div>
     </div>
-    <div class="time-cell passed">93</div>
+    <div class="time-cell passed">98</div>
   </div>
 
    
@@ -9471,7 +9471,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">43</div>
+    <div class="time-cell passed">58</div>
   </div>
 
    
@@ -9499,7 +9499,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">4045</div>
+    <div class="time-cell passed">444</div>
   </div>
 
    
@@ -9527,7 +9527,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -9556,7 +9556,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12375</span>
+              <span>ms:</span>&nbsp;<span>1975</span>
             </div>
           </div>
           <div class="step-row">
@@ -9576,7 +9576,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -9604,7 +9604,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -9635,7 +9635,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def locators = read(&#39;classpath:common/Locators.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -9663,7 +9663,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8425</div>
+    <div class="time-cell passed">1175</div>
   </div>
 
    
@@ -9672,7 +9672,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.293">22:19:00.337 preferred port 9515 not available, will use: 62337
+  <div class="preformatted" data-parent="0.293">09:43:11.233 preferred port 9515 not available, will use: 62096
 </div>   
 
   
@@ -9692,7 +9692,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">74</div>
+    <div class="time-cell passed">88</div>
   </div>
 
    
@@ -9720,7 +9720,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">61</div>
+    <div class="time-cell passed">67</div>
   </div>
 
    
@@ -9748,7 +9748,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">61</div>
   </div>
 
    
@@ -9776,7 +9776,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">48</div>
+    <div class="time-cell passed">60</div>
   </div>
 
    
@@ -9804,7 +9804,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.invalidData.InputUserPasswordTooShort)</span>
       </div>
     </div>
-    <div class="time-cell passed">60</div>
+    <div class="time-cell passed">51</div>
   </div>
 
    
@@ -9832,7 +9832,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">48</div>
+    <div class="time-cell passed">45</div>
   </div>
 
    
@@ -9860,7 +9860,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">3595</div>
+    <div class="time-cell passed">416</div>
   </div>
 
    
@@ -9888,7 +9888,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -9917,7 +9917,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11695</span>
+              <span>ms:</span>&nbsp;<span>2035</span>
             </div>
           </div>
           <div class="step-row">
@@ -9937,7 +9937,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -9965,7 +9965,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -10024,7 +10024,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8534</div>
+    <div class="time-cell passed">1211</div>
   </div>
 
    
@@ -10033,7 +10033,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.304">22:19:12.877 preferred port 9515 not available, will use: 62405
+  <div class="preformatted" data-parent="0.304">09:43:13.372 preferred port 9515 not available, will use: 62144
 </div>   
 
   
@@ -10053,7 +10053,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">77</div>
+    <div class="time-cell passed">102</div>
   </div>
 
    
@@ -10081,7 +10081,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">60</div>
+    <div class="time-cell passed">69</div>
   </div>
 
    
@@ -10109,7 +10109,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">67</div>
   </div>
 
    
@@ -10137,7 +10137,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">70</div>
   </div>
 
    
@@ -10165,7 +10165,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.invalidData.InputUserPasswordOnlySpace)</span>
       </div>
     </div>
-    <div class="time-cell passed">61</div>
+    <div class="time-cell passed">53</div>
   </div>
 
    
@@ -10193,7 +10193,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.invalidData.InputUserPasswordOnlySpace)</span>
       </div>
     </div>
-    <div class="time-cell passed">47</div>
+    <div class="time-cell passed">49</div>
   </div>
 
    
@@ -10221,7 +10221,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">2799</div>
+    <div class="time-cell passed">400</div>
   </div>
 
    
@@ -10249,7 +10249,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">12</div>
   </div>
 
    
@@ -10278,7 +10278,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11702</span>
+              <span>ms:</span>&nbsp;<span>1998</span>
             </div>
           </div>
           <div class="step-row">
@@ -10298,7 +10298,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -10326,7 +10326,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -10385,7 +10385,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8546</div>
+    <div class="time-cell passed">1186</div>
   </div>
 
    
@@ -10394,7 +10394,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.315">22:19:24.732 preferred port 9515 not available, will use: 62471
+  <div class="preformatted" data-parent="0.315">09:43:15.581 preferred port 9515 not available, will use: 62193
 </div>   
 
   
@@ -10414,7 +10414,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
       </div>
     </div>
-    <div class="time-cell passed">74</div>
+    <div class="time-cell passed">82</div>
   </div>
 
    
@@ -10442,7 +10442,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
       </div>
     </div>
-    <div class="time-cell passed">63</div>
+    <div class="time-cell passed">74</div>
   </div>
 
    
@@ -10470,7 +10470,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">65</div>
+    <div class="time-cell passed">77</div>
   </div>
 
    
@@ -10498,7 +10498,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
       </div>
     </div>
-    <div class="time-cell passed">74</div>
+    <div class="time-cell passed">67</div>
   </div>
 
    
@@ -10526,7 +10526,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell passed">51</div>
   </div>
 
    
@@ -10554,7 +10554,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.invalidData.InputUserPasswordWrong)</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell passed">55</div>
   </div>
 
    
@@ -10582,7 +10582,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
       </div>
     </div>
-    <div class="time-cell passed">2756</div>
+    <div class="time-cell passed">394</div>
   </div>
 
    
@@ -10610,7 +10610,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.registerPage.NotiInvalidConfirmPassword)</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -10639,7 +10639,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>9612</span>
+              <span>ms:</span>&nbsp;<span>1463</span>
             </div>
           </div>
           <div class="step-row">
@@ -10659,7 +10659,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -10687,7 +10687,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -10746,7 +10746,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8767</div>
+    <div class="time-cell passed">1147</div>
   </div>
 
    
@@ -10755,7 +10755,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.326">22:19:36.591 preferred port 9515 not available, will use: 62539
+  <div class="preformatted" data-parent="0.326">09:43:17.739 preferred port 9515 not available, will use: 62241
 </div>   
 
   
@@ -10775,7 +10775,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonLogin)</span>
       </div>
     </div>
-    <div class="time-cell passed">836</div>
+    <div class="time-cell passed">305</div>
   </div>
 
    
@@ -10803,7 +10803,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>waitFor(locators.loginPage.Title)</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -10832,7 +10832,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>12900</span>
+              <span>ms:</span>&nbsp;<span>2087</span>
             </div>
           </div>
           <div class="step-row">
@@ -10852,7 +10852,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, headless: true }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39;, pollingInterval: 2000, addOptions: [&#39;--start-maximized&#39;]  }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -10880,7 +10880,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/Data.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def data = read(&#39;classpath:common/DataWeb.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -10936,10 +10936,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">332</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
+        <span>*</span>&nbsp;<span>def now = java.time.LocalDateTime.now()</span>
       </div>
     </div>
-    <div class="time-cell passed">9036</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -10948,8 +10948,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.332">22:19:46.377 preferred port 9515 not available, will use: 62592
-</div>   
+     
 
   
 
@@ -10965,10 +10964,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">333</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
+        <span>*</span>&nbsp;<span>def formatter = java.time.format.DateTimeFormatter.ofPattern(&#39;yyyyMMddHHmmss&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">75</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -10991,6 +10990,119 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="0.334">
       <div class="step-ref passed">334</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timestamp = now.format(formatter)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.335">
+      <div class="step-ref passed">335</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def account = &#39;A&#39; + timestamp</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.336">
+      <div class="step-ref passed">336</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>driver data.registerUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1184</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.336">09:43:19.361 preferred port 9515 not available, will use: 62275
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.337">
+      <div class="step-ref passed">337</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserName, data.registerData.InputUserName)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">77</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.338">
+      <div class="step-ref passed">338</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPhone, data.registerData.InputUserPhone)</span>
@@ -11017,126 +11129,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.335">
-      <div class="step-ref passed">335</div>
+    <div class="step-container" id="0.339">
+      <div class="step-ref passed">339</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserEmail, data.registerData.InputUserEmail)</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.336">
-      <div class="step-ref passed">336</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, data.registerData.InputUserAccount)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">50</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.337">
-      <div class="step-ref passed">337</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">55</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.338">
-      <div class="step-ref passed">338</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">47</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.339">
-      <div class="step-ref passed">339</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3512</div>
+    <div class="time-cell passed">61</div>
   </div>
 
    
@@ -11159,6 +11159,118 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="0.340">
       <div class="step-ref passed">340</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserAccount, account)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">61</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.341">
+      <div class="step-ref passed">341</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserPassword, data.registerData.InputUserPassword)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">60</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.342">
+      <div class="step-ref passed">342</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>input(locators.registerPage.InputUserConfirmPassword, data.registerData.InputUserPassword)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">52</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.343">
+      <div class="step-ref passed">343</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>click(locators.registerPage.ButtonRegister)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">508</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.344">
+      <div class="step-ref passed">344</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>waitFor(locators.loginPage.NotiRegisterSuccess)</span>

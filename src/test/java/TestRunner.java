@@ -13,6 +13,6 @@ class TestRunner {
                 "web/LoginPageTest",
                 "web/ShowInfoPageTest",
                 "web/UpdateInfoPageTest"
-        ).relativeTo(getClass());
+        ).outputCucumberJson(true).relativeTo(getClass());
     }
 }

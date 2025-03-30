@@ -1,7 +1,7 @@
 Feature: kiểm thử api cập nhật thông tin
 
   Background:
-    * def data = read('classpath:common/Data.json')
+    * def data = read('classpath:common/DataApi.json')
 
   Scenario: kiểm tra api cập nhật thông tin thành công
     * def loginResponse = call read('classpath:api/ApiLoginTest.feature')

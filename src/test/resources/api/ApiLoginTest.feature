@@ -1,7 +1,7 @@
 Feature: kiểm thử api đăng nhập
 
   Background:
-    * def data = read('classpath:common/Data.json')
+    * def data = read('classpath:common/DataApi.json')
 
   Scenario: kiểm tra api đăng nhập thành công
     Given url data.apiUrl + '/login'
